@@ -6,7 +6,7 @@ void calcHighScore(array);
 void calcLowScore(array);
 void calcSumScore(array);
 
-/* method prompts user for input and scans result call calcuation methods*/
+/* The method prompts user for input and after a scans calls the calcuation methods*/
 int main() {
   int array[10][5];
   int i;
@@ -25,7 +25,7 @@ int main() {
   return 1;
 }
 
-/*calculats the sum of each student of the array*/
+/*The method calculats the sum of each students' grades*/
 void calcSumGrade(array){
   int i;
   int n;
@@ -37,7 +37,7 @@ void calcSumGrade(array){
   printf("the sum of student %i is %i", i, sum);
   }
 }
-/*calculats the average of each student of the array*/
+/*The method calculats the average for each student*/
 void calcAvgGrade(array){
   int i;
   int n;
@@ -49,7 +49,7 @@ void calcAvgGrade(array){
   printf("the average of student %i is %i", i, sum/5);
   }
 }
-/*calculats the high score of the array*/
+/*The method calculats the high score of every quiz*/
 void calcHighScore(array){
   int i;
   int n;
@@ -63,7 +63,7 @@ void calcHighScore(array){
   printf("the high score of quiz %i is %i", n, max);
   }
 }
-/*calculats the low score of the array*/
+/*The method calculats the low score of every quiz*/
 void calcLowScore(array){
   int i;
   int n;
@@ -77,7 +77,7 @@ void calcLowScore(array){
   printf("the low score of quiz %i is %i", n, min);
   }
 }
-/*calculats the sum score of every quiz*/
+/*The method calculats the sum score for every quiz*/
 void calcSumScore(array){
   int i;
   int n;
