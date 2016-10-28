@@ -6,35 +6,38 @@
 int main(){
   int row = 0;
   char array[80];
-  char word[20][20];
-  char end = '*';
-  int wordno;
+  char end = 'Z';
+  char *startoflast;
+  int stfindex = 0;
 
-  printf("Please enter the scentence you would like to reverse: ");
+  printf("Please enter the sentence you would like to reverse: ");
 
   for(;;){
       scanf("%[^\n]s", &array[row]);
-      if (array[row] == '.' || '?' || '!')
-  		{
+      if (array[row] != '.' || '?' || '!'){
         end = array[row];
         break;
   		}
-  		row++;
+      row++;
   }
 
-  printf("The scentence you entered is: ");
 
-  int startoflast = strrchar(array, 32);
-  for (wordno = startoflast; wordno > strlen(array) ; wordno++)
-  {
-    /* save to word array remove from gen array */
-    for(row =0; row > strlen(word); row++){
-      word[wordrow][wordno] = array[row];
+/*get the last space in the sentence, print everything to the right, remove word from sentence repeat until 0*/
+  printf("The punctuation used is: %c", end);
+
+    startoflast = strrchr(array, 32);
+    stfindex = startoflast - array;
+
+    printf("\nthe first space is at: %i\n", stfindex);
+
+    printf("The sentence you entered is: ");
+
+    for(row = stfindex; row < strlen(array)- 1; row++){ /*everything from last space to end of current scentece, printed then trashed*/
+      printf("%c", array[row]);
+      array[row] = 'Z';
     }
-  }
-  printf("%c", array[row]);
 
-  printf("\n done! \n");
+  printf("\ndone! \n");
 
   return 1;
 }
