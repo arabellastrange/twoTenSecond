@@ -34,7 +34,7 @@ int main() {
     for (col = 0; col < 5; col++) {
       sum = sum + array[row][col];
     }
-  printf("the sum of row %i is %i \n", row, sum);
+  printf("\tThe sum of row %i is: %i \n", row, sum);
   }
 
   for (col = 0; col < 5; col++){
@@ -42,7 +42,7 @@ int main() {
     for (row = 0; row < 5; row++){
       sum = sum + array[row][col];
     }
-  printf("the sum of col %i is %i \n", col, sum);
+  printf("\tThe sum of col %i is: %i \n", col, sum);
   }
   return 1;
 }

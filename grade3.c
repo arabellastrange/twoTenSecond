@@ -23,7 +23,7 @@ int main() {
     for (col= 0; col < 5; col++) {
       sum = sum + array[row][col];
     }
-    printf("the sum for student %i is %i \n", row, sum);
+    printf("\tThe sum of student %i grades is: %i \n", row, sum);
   }
 
   for (row = 0; row < 10; row++) {
@@ -31,7 +31,7 @@ int main() {
     for (col= 0; col < 5; col++) {
       sum = sum + array[row][col];
     }
-    printf("the average for student %i is %i \n", row, sum/5);
+    printf("\tThe average grade for student %i is: %i \n", row, sum/5);
   }
 
   for(col = 0; col < 5; col++){
@@ -40,7 +40,7 @@ int main() {
         max = array[row][col];
       }
     }
-    printf("for quiz %i the high score is %i \n", col, max);
+    printf("\tFor quiz %i the high score is: %i \n", col, max);
   }
 
   for(col = 0; col < 5; col++){
@@ -49,14 +49,14 @@ int main() {
         min = array[row][col];
       }
     }
-    printf("for quiz %i the low score is %i \n", col, min);
+    printf("\tFor quiz %i the low score is %i \n", col, min);
   }
 
   for(col = 0; col < 5; col++){
     for(row = 0; row < 10; row++){
       sum = sum + array[row][col];
     }
-    printf("for quiz %i the sum is %i \n", col, sum);
+    printf("\tFor quiz %i the sum is %i \n", col, sum);
   }
 
   return 1;
